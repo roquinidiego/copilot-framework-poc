@@ -1,6 +1,6 @@
 {
   "name": "@roquinidiego/copilot-framework-poc",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Distributes shared Copilot agents, prompts, skills, and spec conventions into consumer repositories.",
   "type": "module",
   "bin": {
