@@ -1,0 +1,37 @@
+{
+  "name": "@globalpayments-internal/coreboardingservices-copilot",
+  "version": "2.0.0",
+  "description": "Distributes shared Copilot agents, prompts, skills, and spec conventions into consumer repositories.",
+  "type": "module",
+  "bin": {
+    "coreboardingservices-copilot": "bin/cli.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "bin",
+    "src",
+    "templates",
+    "policy.json"
+  ],
+  "scripts": {
+    "seed": "node scripts/seed.js",
+    "sync": "node bin/cli.js sync",
+    "check": "node bin/cli.js check",
+    "test": "node --test"
+  },
+  "keywords": [
+    "copilot",
+    "conventions",
+    "agents",
+    "scaffold",
+    "spec"
+  ],
+  "license": "UNLICENSED",
+  "private": false,
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "access": "restricted"
+  }
+}

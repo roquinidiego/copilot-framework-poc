@@ -1,0 +1,11 @@
+{
+  "managed": [
+    ".github/agents/**",
+    ".github/prompts/**",
+    ".github/skills/**",
+    "AGENTS.md"
+  ],
+  "protected": [
+    "spec/**"
+  ]
+}
