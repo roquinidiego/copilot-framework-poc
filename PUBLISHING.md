@@ -1,6 +1,6 @@
 # Publishing Guide
 
-This document covers both consuming and maintaining `@globalpayments-internal/coreboardingservices-copilot` via GitHub Packages.
+This document covers both consuming and maintaining `@roquinidiego/copilot-framework-poc` via GitHub Packages.
 
 ---
 
@@ -30,23 +30,23 @@ Generate a GitHub PAT with `read:packages` scope, then add it to your user-level
 
 ### 2. Configure your project's `.npmrc`
 
-Add an `.npmrc` file to the root of your consumer repository so npm knows where to resolve the `@globalpayments-internal` scope:
+Add an `.npmrc` file to the root of your consumer repository so npm knows where to resolve the `@roquinidiego` scope:
 
 ```
-@globalpayments-internal:registry=https://npm.pkg.github.com
+@roquinidiego:registry=https://npm.pkg.github.com
 //npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}
 ```
 
 ### 3. Install the package
 
 ```bash
-npm install -D @globalpayments-internal/coreboardingservices-copilot
+npm install -D @roquinidiego/copilot-framework-poc
 ```
 
 To pin to a specific version:
 
 ```bash
-npm install -D @globalpayments-internal/coreboardingservices-copilot@1.0.0
+npm install -D @roquinidiego/copilot-framework-poc@1.0.0
 ```
 
 ### 4. Run the initial sync
@@ -68,7 +68,7 @@ npm outdated
 To upgrade:
 
 ```bash
-npm install -D @globalpayments-internal/coreboardingservices-copilot@<new-version>
+npm install -D @roquinidiego/copilot-framework-poc@<new-version>
 npx coreboardingservices-copilot sync
 ```
 
@@ -80,7 +80,7 @@ Review the change summary, then commit.
 
 ### Prerequisites
 
-- Write access to the `globalpayments-internal` org on GitHub
+- Write access to the `roquinidiego` account on GitHub
 - Authenticated to GitHub Packages locally — run once:
   ```bash
   npm login --registry=https://npm.pkg.github.com
@@ -126,7 +126,7 @@ npm publish
 ```
 
 Verify the new version appears at:
-`https://github.com/orgs/globalpayments-internal/packages`
+`https://github.com/roquinidiego?tab=packages`
 
 #### 6. Create a GitHub Release (recommended)
 

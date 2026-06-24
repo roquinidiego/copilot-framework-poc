@@ -12,7 +12,7 @@ Distributes shared Copilot **agents, prompts, skills**, and **`spec/` convention
 Add a `.npmrc` file to your project root (or to `~/.npmrc` globally):
 
 ```
-@globalpayments-internal:registry=https://npm.pkg.github.com
+@roquinidiego:registry=https://npm.pkg.github.com
 //npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}
 ```
 
@@ -21,7 +21,7 @@ Set `GITHUB_TOKEN` to a GitHub Personal Access Token with at least `read:package
 ### 2. Install the package
 
 ```bash
-npm install -D @globalpayments-internal/coreboardingservices-copilot
+npm install -D @roquinidiego/copilot-framework-poc
 ```
 
 ## Usage
@@ -74,7 +74,7 @@ Commit `.hps-ai-kit.json` to the consumer repo.
 
 ## Updating to a new version
 
-1. Bump the kit version: `npm install -D @globalpayments-internal/coreboardingservices-copilot@1.1.0`
+1. Bump the kit version: `npm install -D @roquinidiego/copilot-framework-poc@1.1.0`
 2. Run `npx coreboardingservices-copilot sync`
 3. Review the change summary; commit.
 
