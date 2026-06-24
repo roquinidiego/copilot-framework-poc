@@ -4,12 +4,12 @@ import { sync, check } from '../src/sync.js';
 import { printReport } from '../src/report.js';
 import { packageVersion } from '../src/manifest.js';
 
-const HELP = `coreboardingservices-copilot
+const HELP = `copilot-framework-poc
 
 Usage:
-  coreboardingservices-copilot sync   [options]   Copy agents/prompts/skills/spec + AGENTS.md into this repo
-  coreboardingservices-copilot check  [options]   Report drift of managed files (read-only, CI-friendly)
-  coreboardingservices-copilot help               Show this help
+  copilot-framework-poc sync   [options]   Copy agents/prompts/skills/spec + AGENTS.md into this repo
+  copilot-framework-poc check  [options]   Report drift of managed files (read-only, CI-friendly)
+  copilot-framework-poc help               Show this help
 
 Options:
   --dir <path>   Target directory (default: current working directory)
@@ -85,7 +85,7 @@ function main() {
     printReport(results, { version, target: targetDir });
     if (hasDrift) {
       process.stderr.write(
-        '\nDrift detected. Run "coreboardingservices-copilot sync" to update.\n',
+        '\nDrift detected. Run "copilot-framework-poc sync" to update.\n',
       );
       process.exitCode = 1;
     }

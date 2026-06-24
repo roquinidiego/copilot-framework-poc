@@ -1,4 +1,4 @@
-# coreboardingservices-copilot
+# copilot-framework-poc
 
 Distributes shared Copilot **agents, prompts, skills**, and **`spec/` conventions** (plus the root `AGENTS.md` routing index) into consumer repositories, with versioned updates.
 
@@ -30,16 +30,16 @@ Run from the root of the consumer repository:
 
 ```bash
 # Copy managed files + create missing spec files
-npx coreboardingservices-copilot sync
+npx copilot-framework-poc sync
 
 # Preview without writing anything
-npx coreboardingservices-copilot sync --dry-run
+npx copilot-framework-poc sync --dry-run
 
 # Also overwrite protected spec files
-npx coreboardingservices-copilot sync --force
+npx copilot-framework-poc sync --force
 
 # Read-only drift report (exit code 1 if out of date) — good for CI
-npx coreboardingservices-copilot check
+npx copilot-framework-poc check
 ```
 
 ### Options
@@ -75,7 +75,7 @@ Commit `.hps-ai-kit.json` to the consumer repo.
 ## Updating to a new version
 
 1. Bump the kit version: `npm install -D @roquinidiego/copilot-framework-poc@1.1.0`
-2. Run `npx coreboardingservices-copilot sync`
+2. Run `npx copilot-framework-poc sync`
 3. Review the change summary; commit.
 
 ## Maintaining the kit
@@ -99,7 +99,7 @@ This copies `.github/agents`, `.github/prompts`, `.github/skills`, `spec/`, and 
 ## Layout
 
 ```
-coreboardingservices-copilot/
+copilot-framework-poc/
   bin/cli.js          # CLI entry: sync, check
   src/                # sync/check logic, policy, manifest, fs helpers, report
   scripts/seed.js     # dev-only payload importer

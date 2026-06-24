@@ -4,7 +4,7 @@
   "description": "Distributes shared Copilot agents, prompts, skills, and spec conventions into consumer repositories.",
   "type": "module",
   "bin": {
-    "coreboardingservices-copilot": "bin/cli.js"
+    "copilot-framework-poc": "bin/cli.js"
   },
   "engines": {
     "node": ">=18.0.0"

@@ -41,7 +41,7 @@ export function readManifest(targetDir) {
  */
 export function writeManifest(targetDir, manifest) {
   const body = {
-    name: '@globalpayments-internal/coreboardingservices-copilot',
+    name: '@roquinidiego/copilot-framework-poc',
     version: manifest.version,
     updatedAt: new Date().toISOString(),
     files: manifest.files,

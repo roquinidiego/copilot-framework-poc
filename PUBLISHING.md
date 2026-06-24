@@ -52,7 +52,7 @@ npm install -D @roquinidiego/copilot-framework-poc@1.0.0
 ### 4. Run the initial sync
 
 ```bash
-npx coreboardingservices-copilot sync
+npx copilot-framework-poc sync
 ```
 
 This copies the managed files into your repo and creates missing `spec/` files. Commit the result, including `.hps-ai-kit.json`.
@@ -69,7 +69,7 @@ To upgrade:
 
 ```bash
 npm install -D @roquinidiego/copilot-framework-poc@<new-version>
-npx coreboardingservices-copilot sync
+npx copilot-framework-poc sync
 ```
 
 Review the change summary, then commit.

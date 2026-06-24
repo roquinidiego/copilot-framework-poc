@@ -53,7 +53,7 @@ export function printReport(results, meta = {}) {
   const lines = [];
   lines.push('');
   lines.push(
-    `coreboardingservices-copilot ${meta.version ?? ''}${
+    `copilot-framework-poc ${meta.version ?? ''}${
       meta.dryRun ? ' (dry run — nothing written)' : ''
     }`.trim(),
   );
